@@ -33,7 +33,6 @@ Ensure you have Vagrant installed on your host machine. The `Vagrantfile` should
    - Create the Backup directory: `mkdir -p /home/vagrant/Backup`
    - Create the restic key file: 
      ```bash
-     echo "veryStrongPasswordForResticRepository123!" > /home/vagrant/restic.key
      chmod 600 /home/vagrant/restic.key
      ```
    - Initialize the restic repository: 
