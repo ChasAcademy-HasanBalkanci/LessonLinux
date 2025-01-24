@@ -1,0 +1,9 @@
+[Unit]
+Description=Run restic SSH backup 5 minutes after boot
+
+[Timer]
+OnBootSec=5min
+Unit=restic-ssh-backup.service
+
+[Install]
+WantedBy=timers.target

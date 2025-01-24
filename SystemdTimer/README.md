@@ -14,7 +14,7 @@ This project sets up an automated backup system using Restic between two Vagrant
 
 ### 1. Vagrant Setup
 
-Ensure you have Vagrant installed on your host machine. The `Vagrantfile` should define two VMs:
+Ensure you have Vagrant installed on your host machine. The `Vagrantfile` should define two VMs: (If you need you can use the vagrantfile that is aranged in advance.)
 
 - Source VM (192.168.33.10): Where the data to be backed up resides
 - Target VM (192.168.33.20): Where the backups will be stored
