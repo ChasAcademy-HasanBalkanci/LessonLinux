@@ -1,0 +1,13 @@
+[Unit]
+Description=Restic backup via SSH
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/restic-ssh-backup.sh
+User=vagrant
+Group=vagrant
+
+[Install]
+WantedBy=multi-user.target

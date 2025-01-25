@@ -27,9 +27,7 @@ Ensure you have Vagrant installed on your host machine. The `Vagrantfile` should
    - Create the backup script in `/usr/local/bin/` and make it executable:
      ```bash
      sudo chmod +x /usr/local/bin/restic-ssh-backup.sh
-
      ```
-
 
 2. On the target VM (192.168.33.20):
    - Create the Backup directory: `mkdir -p /home/vagrant/Backup`
