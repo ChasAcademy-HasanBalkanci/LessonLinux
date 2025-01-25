@@ -14,7 +14,7 @@ This project sets up an automated backup system using Restic between two Vagrant
 
 ### 1. Vagrant Setup
 
-Ensure you have Vagrant installed on your host machine. The `Vagrantfile` should define two VMs: (If you need you can use the vagrantfile that is aranged in advance.)
+Ensure you have Vagrant installed on your host machine. The `Vagrantfile` should define two VMs:
 
 - Source VM (192.168.33.10): Where the data to be backed up resides
 - Target VM (192.168.33.20): Where the backups will be stored
@@ -27,7 +27,9 @@ Ensure you have Vagrant installed on your host machine. The `Vagrantfile` should
    - Create the backup script in `/usr/local/bin/` and make it executable:
      ```bash
      sudo chmod +x /usr/local/bin/restic-ssh-backup.sh
+
      ```
+
 
 2. On the target VM (192.168.33.20):
    - Create the Backup directory: `mkdir -p /home/vagrant/Backup`
